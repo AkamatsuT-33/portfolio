@@ -6,9 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>haru's portfolio sites</title>
-    <link rel="icon" href="vector-pen.svg" type="image/svg+xml">
-    
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="icon" href="./static/icon/vector-pen.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./static/css_js/bootstrap.min.css">
     <style>
         h2, h5 {
             position: relative;
@@ -29,7 +28,7 @@
 
         .main_img{
             height: auto;
-            background-image: url('portfolio_img_001.png');
+            background-image: url('./static/images/portfolio_img_001.png');
             background-repeat: no-repeat;
             background-position: center top;
             background-size: cover;
@@ -93,7 +92,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#About_me_area">Profile</a>
+                        <a class="nav-link active" href="#About_me_area">About me</a>
                     </li>
 
                     <li class="nav-item">
@@ -150,7 +149,7 @@
                             <div class="row">
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-8" style="align-self: center;">
-                                    <p>このサイトは、東京国際工科専門職大学で人工知能を勉強しているharuのポートフォリオサイトです。どうぞご覧ください。</p>
+                                    <p>このサイトは、東京国際工科専門職大学で人工知能を学んでいるTomoharu Akamatsuのポートフォリオサイトです。どうぞご覧ください。</p>
                                 
                                 </div>
                                 <div class="col-sm-2"></div>
@@ -164,13 +163,13 @@
     
         <section class="margin-bottom padding_scale">
             <div>
-                <h2 id="About_me_area" class="text-center"><span>Profile</span></h2>
+                <h2 id="About_me_area" class="text-center"><span>About me</span></h2>
             </div>
 
             <div class="row">
                 <div class="card mb-5 col-sm-10 mx-auto" style="width: auto;">
                     <div class="card-body">
-                        <h3 class="card-title text-center"><span class="str_center">haru</span></h3>
+                        <h3 class="card-title text-center"><span class="str_center">Tomoharu Akamatsu</span></h3>
                         <div class="card-text">
                             <div class="row">
                                 <div class="col-sm-2"></div>
@@ -200,7 +199,7 @@
             <div class="row">
                 <div class="card mb-5 mx-auto col-sm-10">
                     <div class="card-body">
-                        <a href='https://github.com/iput2020-akamatsu/ml_x-ray'><h5 class="card-title str_center"><span>転移学習を用いた胸部Ｘ線画像モデルの作成と性能評価</span></h5></a>
+                        <a href='https://github.com/iput2020-akamatsu/ml_x-ray'><h5 class="card-title str_center"><span>01_転移学習を用いた胸部Ｘ線画像モデルの作成と性能評価</span></h5></a>
                         <p class="card-text">
                             <div class="row">
                                 <div class="col-sm-2"></div>
@@ -208,44 +207,148 @@
                                     <p style="text-align: justify;">昨今の感染症の情勢で、疲弊している医療従事者の方を少しでも支援したいと思ったため、深層学習モデルであるVGG16、Vision Transformer、MLP-Mixerの学習済みモデルを用いて、胸部X線画像の分類モデルの転移学習を行いました。
                                     画像の前処理を様々試し、学習して、評価指標には、Torchevalを用いて、評価を行いました。また、論文の内容を解釈し、今まで使ったことのなかったPyTorchの使い方を学習することができました。
                                     Datasetは、データコンペティションサイト:Kaggleから取得して、学習をしました。難しい部分もありましたが、公式リファレンス、Webサイト、参考書で調査しながら、今現在（2023年2月28日）約80%の精度となっております。
-                                    </p></a>
+                                    </p>
                                 </div>
                                 <div class="col-sm-2"></div>
+
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://github.com/iput2020-akamatsu/ml_x-ray" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">GitHubへ</a>
+                                </div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://drive.google.com/drive/folders/1JO1oFOWHYdulK-HZeSaoVa8Ulf8kgGNf?usp=sharing" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">制作物へ</a>
+                                </div>
+                                <div class="col-sm-3"></div>
+
                             </div>
                         </p>
                     </div>
                 </div>
-                 
+
                 <div class="card mb-5 mx-auto col-sm-10">
                     <div class="card-body">
-                        <a href='https://github.com/iput2020-akamatsu/qr_create_app'><h5 class="card-title str_center"><span>QR Create App</span></h5></a>
+                        <a href='https://github.com/iput2020-akamatsu/ml_x-ray'><h5 class="card-title str_center"><span>02_転移学習を用いた胸部Ｘ線画像モデルを用いたデスクトップアプリ開発</span></h5></a>
                         <p class="card-text">
                             <div class="row">
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-8">
                                     <p style="text-align: justify;">
-                                        デスクトップアプリケーションとしてQRコードを作成するPCアプリを開発しました。
+                                        上記01で精度のよかったモデルを用いたデスクトップアプリケーションを作成しました。
+                                    </p>
+                                </div>
+                                <div class="col-sm-2"></div>
+
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://github.com/iput2020-akamatsu/qr_create_app" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">GitHubへ</a>
+                                </div>
+                                <div class="col-sm-4 str_center">
+                                <a href="x_ray_app_info.html" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">詳細へ</a>
+                                </div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://drive.google.com/drive/folders/1lVSXfamr_NNMct4Z5EArC4_azDQ6bYbk?usp=sharing" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">制作物へ</a>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-5 mx-auto col-sm-10">
+                    <div class="card-body">
+                        <a href='https://github.com/iput2020-akamatsu/qr_create_app'><h5 class="card-title str_center"><span>03_QR Create App</span></h5></a>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <p style="text-align: justify;">
+                                        デスクトップアプリケーションの作成の練習もかねて、QRコードを作成するアプリを開発しました。
                                         URL等からQRコードを生成して、表示することやpngファイルとして保存することができるようにしました。
                                         GUIのフレームワークはTkinterを用いて開発しました。
                                     </p>
                                 </div>
                                 <div class="col-sm-2"></div>
+
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://github.com/iput2020-akamatsu/qr_create_app" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">GitHubへ</a>
+                                </div>
+                                <div class="col-sm-4 str_center">
+                                <a href="qr_code_info.html" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">詳細へ</a>
+                                </div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://drive.google.com/drive/folders/1tm1hwWqDKS6Z8oyZCHaIv2sQXyaR_SQx?usp=sharing" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">制作物へ</a>
+                                </div>
+                                <div class="col-sm-1"></div>
                             </div>
                         </p>
                     </div>
                 </div>
-                
+
+                <div class="card mb-5 mx-auto col-sm-10">
+                    <div class="card-body">
+                        <a href='https://github.com/iput2020-akamatsu/ml_x-ray'><h5 class="card-title str_center"><span>04_数字当てゲームコマンドラインアプリ</span></h5></a>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <p style="text-align: justify;">
+                                        コマンドラインで遊べる数字当てゲームを作成しました。関数を別ファイルにして、整備しやすいようにしました。
+                                    </p>
+                                </div>
+                                <div class="col-sm-2"></div>
+
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4 str_center">
+                                <a href="https://github.com/iput2020-akamatsu/qr_create_app" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">GitHubへ</a>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-5 mx-auto col-sm-10">
+                    <div class="card-body">
+                        <a href='https://github.com/iput2020-akamatsu/ml_x-ray'><h5 class="card-title str_center"><span>05_数字当てゲーム(Fig_Search_App)デスクトップアプリ</span></h5></a>
+                        <p class="card-text">
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <p style="text-align: justify;">
+                                        上記04のコマンドラインでの数字当てゲームをデスクトップアプリ化しました。sqlightも用いて記録の保存をできるようにしました。
+                                    </p>
+                                </div>
+                                <div class="col-sm-2"></div>
+
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://github.com/iput2020-akamatsu/qr_create_app" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">GitHubへ</a>
+                                </div>
+                                <div class="col-sm-4 str_center">
+                                <a href="fig_search_app_info.html" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">詳細へ</a>
+                                </div>
+                                <div class="col-sm-3 str_center">
+                                <a href="https://drive.google.com/drive/folders/1-Z7t09kouN2-RRYveuQu7UCBPi_SOjkS?usp=sharing" class="btn btn-dark btn-lg disable" tabindex="-1" role="button" aria-disabled="true">制作物へ</a>
+                                </div>
+                                <div class="col-sm-1"></div>
+
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
                 <div class="card mb-5 mx-auto col-sm-10">
                     <div class="row" style="padding-top: 30px;">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
-                            <img src="portfolio_top_img_001.PNG" class="card-img-top" alt="...">
+                            <img src="./static/images/portfolio_top_img_001.PNG" class="card-img-top" alt="...">
                         </div>
                         <div class="col-sm-2"></div>
                     </div>
                     
                     <div class="card-body">
-                        <h5 class="card-title str_center"><span>ポートフォリオサイト</span></h5>
+                        <h5 class="card-title str_center"><span>06_ポートフォリオサイト</span></h5>
                         <p class="card-text">
                             <div class="row">
                                 <div class="col-sm-2"></div>
@@ -271,11 +374,11 @@
             <div class="row">
                 <div class="card mb-5 mx-auto col-sm-10" style="width: auto;">
                     <div class="card-body">
-                        <a href='https://ainow.ai/author/akamatsu/'><h5 class="card-title str_center"><span>AI専門メディアでの記事執筆経験</span></h5></a>
+                        <a href='https://ainow.ai/author/akamatsu/'><h5 class="card-title str_center"><span>AI専門メディア企業での記事執筆経験</span></h5></a>
                         <p class="card-text">
                             <div class="row">
                                 <div class="col-sm-2"></div>
-                                <div class="col-sm-8"><p style="text-align: justify;">インターン先のAI専門メディアでAI専門の記事の執筆業務を4週間行いました。AI技術について再勉強させていただき、文章の書き方から記事の書き方まで経験させていただきました。</p></div>
+                                <div class="col-sm-8"><p style="text-align: justify;">インターン先のAI専門メディア企業でAI専門の記事の執筆業務を4週間行いました。AI技術について再勉強させていただき、文章の書き方から記事の書き方まで経験させていただきました。</p></div>
                                 <div class="col-sm-2"></div>
                             </div>
                         </p>
@@ -337,7 +440,7 @@
                                     
                                     <h5>Language</h5>
                                     <p class="card-text str_left">
-                                        Python3<br>
+                                        python3<br>
                                         C<br>
                                         C++<br>
                                     </p>
@@ -352,7 +455,7 @@
                                         TensorFlow<br>
                                         PyTorch<br>
                                         pandas<br>
-                                        NumPy<br>
+                                        numpy<br>
                                         matplotlib<br>
                                     </p>
                                 </div>
@@ -364,8 +467,8 @@
                                     <h5 class="card-title">Tool</h5>
                                     <p class="card-text str_left">
                                         
-                                        VSCode<br>
-                                        GitHub<br>                                            
+                                        Vscode<br>
+                                        Github<br>                                            
                                     </p>
                                 </div>
                             </div>
@@ -416,7 +519,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="bootstrap.min.js"></script>
+<script src="./static/css_js/bootstrap.min.js"></script>
 
 </body>
 </html>
